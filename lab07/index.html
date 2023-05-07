@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Laboratorio 07</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      .navbar{
+        height: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark block-top bg-warning flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><h1>CRUD - Laboratorio 7</h1></a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="offcanvas" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="libros/libros.php">
+                  Libros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="autores/autores.php">
+                  Autores
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">¿Qué tenemos que hacer?</h1>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Ejercicio</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Actividad
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="ml-5">
+                  <p>Tomando como base el procedimiento para generar consultas que permitan operaciones de bases de datos (CRUD) MySqli con PHP visualizado la semana pasada, realizar una aplicación que resuelva lo que se plantea a continuación.
+                    Se desea implementar una biblioteca digital que permita a los estudiantes de TECSUP acceder a bibliografía por medio de internet. 
+                    El funcionamiento será el de un catálogo de libros en el cual el estudiante pueda seleccionar el libro que desea leer.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Libros</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Lista de Libros
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <img src="img/libros.jpg" alt="" class="img-fluid mx-auto">
+                </div>
+                <div class="col">
+                  <p>Un libro debe considerar dentro de sus atributos: id, año, autor, titulo, URL de ubicación del recurso, especialidad y editorial.
+                    <br>Se debe permitir:
+                    <br>
+                    <ul>
+                        <li>Mostrar la lista de libros</li>
+                        <li>Agregar un nuevo libro</li>
+                        <li>Editar la información de un libro</li>
+                        <li>Eliminar un libro</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="libros/libros.php" class="btn btn-warning">Ver Libros</a>
+            </div>            
+          </div>
+
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Autores</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Lista de Autores
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p>Un autor debe considerar dentro de sus atributos: id, nombre, apellido paterno, apellido materno.
+                    <br>Se debe permitir:
+                    <br>
+                    <ul>
+                        <li>Mostrar la lista de autores</li>
+                        <li>Agregar un nuevo autor</li>
+                        <li>Editar la información de un autor</li>
+                        <li>Eliminar un autor</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="col">
+                  <img src="img/autores.jpg" alt="" class="img-fluid mx-auto">
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="autores/autores.php" class="btn btn-warning">Ver autores</a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
